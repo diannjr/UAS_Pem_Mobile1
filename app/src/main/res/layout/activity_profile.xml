@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/backgroud_rounted"/>
+
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txt_profile"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageProfile"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/supernova"
+        android:padding="12dp"
+        android:text="Nama          :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_jabatan"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/text_name"
+        android:layout_marginTop="20dp"
+        android:text="Jabatan      :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="@color/supernova"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/text_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/text_jabatan"
+        android:layout_marginTop="20dp"
+        android:text="Alamat        :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="@color/supernova"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>
